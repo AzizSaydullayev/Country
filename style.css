@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background: #2B3844;
+}
+
+.row {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: left;
+    color: white;
+}
+
+.nav-left h1 {
+    margin-left: -30px;
+}
+
+.nav-right {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    padding-top: 48px;
+    background: #202C36;
+}
+
+.input {
+    width: 300px;
+    height: 56px;
+    background: #2B3844;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: 160px;
+}
+
+.card {
+    width: 264px;
+    height: 250px;
+    margin-top: 48px;
+    background: #2B3844;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.input img {
+    width: 20px;
+    height: 50px;
+}
+
+.nav-right p {
+    cursor: pointer;
+}
+
+@media (max-width: 834px) {
+    .input {
+        width: 100%;
+        padding: 30px 51px;
+    }
+
+    .cards {
+        padding-bottom: 126px;
+    }
+
+    .input img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 376px) {
+    .cards {
+        justify-content: center;
+    }
+
+    .nav-left h1, .nav-right p {
+        font-size: 14px;
+    }
+
+    .input img {
+        width: 16px;
+    }
+
+    .input {
+        margin-bottom: 100px;
+    }
+}
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark nav {
+    background: #333;
+}
+
+body.dark .nav-left h1,
+body.dark .nav-right {
+    color: #e0e0e0;
+}
+
+body.dark main {
+    background: #1d1d1d;
+}
+
+body.dark .input {
+    background: #333;
+    color: #e0e0e0;
+}
+
+body.dark .cards {
+    background-color: #292929;
+}
+
+body.dark .card {
+    background-color: #444;
+}
+
+body.dark .card img {
+    filter: brightness(0.8);
+}
+
+body.dark .text {
+    color: #e0e0e0;
+}
+
+body.dark .input img {
+    filter: brightness(0.8);
+}
+button{
+background-color: #e0e0e0;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+}

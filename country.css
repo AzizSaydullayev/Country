@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light .mode-toggle {
+    background-color: whitesmoke;
+    color: black;
+}
+body.dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.details img {
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.details h1 {
+    font-size: 2rem;
+}
+
+.details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
